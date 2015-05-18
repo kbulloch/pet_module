@@ -1,0 +1,17 @@
+<?php
+function pet_menu() {
+    $items = array();
+    $items['my_pet'] = array(
+        'title' => "Fur Babies",
+        'page callback' => 'pet_details',
+        'access callback' => TRUE,
+        'type' => MENU_NORMAL_ITEM,
+    );
+    return $items;
+}
+
+function pet_details() {
+    return '<img src="http://img.webmd.com/dtmcms/live/webmd/consumer_assets/site_images/articles/health_tools/surprises_about_dogs_and_cats_slideshow/getty_rm_photo_of_cat_drinking_milk.jpg" alt="cat_milk" />
+    <br>
+    <a href="https://www.google.com/search?q=cats+in+milk&espv=2&biw=834&bih=818&tbm=isch&tbo=u&source=univ&sa=X&ei=NCNaVefWOoP0oASHh4HwAw&ved=0CCUQsAQ#imgrc=iKUU2j5uOuSZ9M%253A%3BreHvA8aNk1oWNM%3Bhttp%253A%252F%252Fimg.webmd.com%252Fdtmcms%252Flive%252Fwebmd%252Fconsumer_assets%252Fsite_images%252Farticles%252Fhealth_tools%252Fsurprises_about_dogs_and_cats_slideshow%252Fgetty_rm_photo_of_cat_drinking_milk.jpg%3Bhttp%253A%252F%252Fpets.webmd.com%252Fss%252Fslideshow-surprising-things-about-dogs-and-cats%3B493%3B335">Cats in milk</a>';
+}
